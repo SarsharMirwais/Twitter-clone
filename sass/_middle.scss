@@ -351,7 +351,8 @@
 .line-divide {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2px;
+
 
     &--name {
         font-size: 15px;
@@ -407,4 +408,12 @@
         text-decoration: underline;
     }
 
+}
+
+.tick-icon {
+    color: #00acee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(4px);
 }

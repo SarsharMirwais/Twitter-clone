@@ -481,7 +481,7 @@ right {
 .line-divide {
   display: flex;
   flex-direction: row;
-  gap: 1rem; }
+  gap: 2px; }
   .line-divide--name {
     font-size: 15px;
     font-weight: 700;
@@ -517,6 +517,13 @@ right {
   text-decoration: none; }
   .after-para:hover {
     text-decoration: underline; }
+
+.tick-icon {
+  color: #00acee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(4px); }
 
 .left-side {
   height: 100vh;
