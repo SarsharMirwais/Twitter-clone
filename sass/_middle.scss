@@ -1,0 +1,410 @@
+.middle {
+    height: auto;
+    width: 60rem;
+    border-right: 1px solid rgb(230, 229, 229);
+    border-left: 1px solid rgb(230, 229, 229);
+
+    @media screen and (max-width: 1200px) {
+        width: 50rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 52rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 70rem;
+    }
+
+}
+
+.twit {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top1 {
+    height: 5rem;
+    width: 59rem;
+    background-color: white;
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.nav {
+    display: none;
+    height: 7rem;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    border-top: 1px solid rgb(221, 220, 220);
+
+    @media screen and (max-width: 2000px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 1500px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 800px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 550px) {
+        display: none;
+
+    }
+
+    @media screen and (max-width: 414px) {
+        display: inherit;
+
+    }
+}
+
+.nav-1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.top2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+    gap: 1rem;
+}
+
+.mirwais {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+
+}
+
+.top2-h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(90, 89, 89);
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1px;
+}
+
+.header-home {
+    cursor: pointer;
+
+    &--h {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+
+    }
+}
+
+.header-svg {
+    padding: 5px 7px 5px 7px;
+    border-radius: 70px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(224, 223, 223);
+
+    }
+
+
+}
+
+.top3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 7.3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(230, 229, 229);
+
+}
+
+.top-svgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .8rem;
+    cursor: pointer;
+
+}
+
+.svg-1 {
+    padding: 5px 6px 3px 6px;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: #e6e8e9;
+    }
+
+
+
+    &--media {
+        color: #00acee;
+
+
+
+    }
+
+    &--media2 {
+        color: #97daf5;
+    }
+}
+
+.svg-2 {
+
+    padding: 5px 6px 3px 6px;
+    border-radius: 20px;
+
+
+    &--media2 {
+        color: #97daf5;
+    }
+}
+
+.button-rigth6 {
+    padding: 5px 18px 8px 18px;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 80px;
+    outline: none;
+    list-style: none;
+    font-family: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #00abee88;
+    text-align: center;
+    cursor: pointer;
+
+    &--1 {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.842);
+        text-decoration: none;
+
+    }
+
+
+}
+
+.tweet-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(230, 229, 229);
+    padding: 15px;
+}
+
+
+.svg-tweet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    padding-left: 6rem;
+}
+
+.like1 {
+    padding: 5px 7px 5px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(235, 241, 243);
+        color: #00acee;
+    }
+}
+
+.like2 {
+    padding: 5px 7px 5px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(233, 245, 233);
+        color: rgb(18, 221, 18);
+    }
+}
+
+.like3 {
+    padding: 5px 7px 5px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(241, 232, 232);
+        color: red;
+    }
+
+
+}
+
+.like4 {
+    padding: 5px 7px 5px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e8eef1;
+        color: #00acee;
+    }
+}
+
+.middle-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-divide {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+
+
+}
+
+.write-name {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+    &--name2 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #676869;
+    }
+
+    &--name3 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #00acee;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.line-divide {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    &--name {
+        font-size: 15px;
+        font-weight: 700;
+        color: rgb(77, 76, 76);
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    &--name4 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #676869;
+
+    }
+}
+
+.paragaph-middle {
+    padding: 1rem 0 0 6rem;
+
+    &--1 {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(77, 76, 76);
+    }
+
+}
+
+.img-tweet {
+    padding: 1rem 1rem 1rem 5rem;
+
+    &--1 {
+        height: 70%;
+        width: 100%;
+    }
+}
+
+.pending-icon {
+    cursor: pointer;
+}
+
+.after-para {
+    font-size: 15px;
+    font-weight: 400;
+    color: #00acee;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
