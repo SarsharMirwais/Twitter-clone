@@ -17,39 +17,37 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
-right {
-  height: 200vh;
-  width: 43rem;
+.right-side {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-grow: 1;
   position: relative; }
-  @media screen and (max-width: 800px) {
-    right {
-      display: none; } }
   @media screen and (max-width: 768px) {
-    right {
+    .right-side {
       display: none; } }
 
-.rigth-container {
+.rigth-items {
   display: flex;
+  position: fixed;
   flex-direction: column;
   gap: 1rem;
-  position: fixed; }
+  right: 0; }
+  @media screen and (max-width: 900px) {
+    .rigth-items {
+      display: none; } }
+  @media screen and (max-width: 800px) {
+    .rigth-items {
+      display: none; } }
   @media screen and (max-width: 768px) {
-    .rigth-container {
+    .rigth-items {
       display: none; } }
 
-/*.rigth-container2 {
-    height: 650vh;
-    width: auto;
-}*/
 .searching {
   display: flex;
   align-items: center;
   padding-top: 0.5rem;
   padding-left: 3rem;
-  background-color: #ffff;
-  padding-right: 5rem; }
+  background-color: #ffff; }
 
 .search {
   padding: 1.5rem 13.5rem 1.5rem 5rem;
@@ -83,8 +81,6 @@ right {
 
 }*/
 .large {
-  height: 41vh;
-  width: 35.5rem;
   margin-top: 1rem;
   margin-left: 3rem;
   background-color: #f2f4f5;
@@ -94,13 +90,11 @@ right {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1200px) {
     .large {
-      height: 47vh; } }
+      margin-left: 2rem; } }
 
 .large2 {
-  height: 45vh;
-  width: 35.5rem;
   margin-left: 3rem;
   background-color: #f2f4f5;
   border-radius: 15px;
@@ -111,15 +105,17 @@ right {
   padding-right: 2rem;
   padding-top: 2rem;
   padding-bottom: 5rem; }
+  @media screen and (max-width: 1200px) {
+    .large2 {
+      margin-left: 2rem; } }
   @media screen and (max-width: 1100px) {
     .large2 {
-      height: 37vh;
       padding-top: 5px;
       padding-bottom: 1rem; } }
 
 .small-details {
   width: auto;
-  height: 10rem;
+  height: 8rem;
   /*background-color: rgb(138, 137, 137);*/
   display: flex;
   flex-direction: row;
@@ -217,9 +213,15 @@ right {
     color: #66ccf5;
     text-decoration: underline; }
 
+.man {
+  display: flex;
+  flex-direction: row; }
+
 .middle {
   height: auto;
-  width: 60rem;
+  display: flex;
+  flex-basis: 100px;
+  flex-direction: column;
   border-right: 1px solid #e6e5e5;
   border-left: 1px solid #e6e5e5; }
 
@@ -227,11 +229,16 @@ right {
   display: flex;
   flex-direction: column; }
 
+.header {
+  position: fixed;
+  top: 0; }
+
 .top1 {
   height: 5rem;
-  width: 59rem;
+  width: 100%;
   background-color: white;
-  position: fixed;
+  top: 0;
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -454,7 +461,7 @@ right {
 .line-divide {
   display: flex;
   flex-direction: row;
-  gap: 1rem; }
+  gap: 2px; }
   .line-divide--name {
     font-size: 15px;
     font-weight: 700;
@@ -491,10 +498,22 @@ right {
   .after-para:hover {
     text-decoration: underline; }
 
+.tick-icon {
+  color: #00acee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(4px); }
+
 .left-side {
   height: 100vh;
-  min-width: 43rem;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
   position: relative; }
+  @media screen and (max-width: 1200px) {
+    .left-side {
+      min-width: 32rem; } }
   @media screen and (max-width: 1100px) {
     .left-side {
       min-width: 10rem; } }
@@ -519,8 +538,7 @@ right {
   justify-content: center;
   align-items: flex-start;
   gap: 0.8rem;
-  margin-top: 1rem;
-  padding-left: 16rem; }
+  margin-top: 1rem; }
   @media screen and (max-width: 1100px) {
     .buttons-left {
       padding-left: 30px; } }
@@ -685,4 +703,40 @@ right {
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10rem;
+  padding-right: 10rem; }
+
+.container2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.left {
+  background-color: red;
+  display: flex;
+  flex-grow: 1; }
+
+.middle {
+  background-color: orange;
+  flex-grow: 1; }
+
+.right {
+  background-color: blue;
+  flex-grow: 1; }
+
+.right-items {
+  background-color: red;
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.search-right {
+  background-color: yellow;
+  height: 2rem;
+  width: auto; }

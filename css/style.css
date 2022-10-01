@@ -17,51 +17,69 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
-right {
-  height: 200vh;
-  max-width: 43rem;
+.right {
+  display: flex;
+  flex-grow: 1; }
+
+.right-trend {
+  background-color: red;
+  height: 95vh;
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
+  gap: 2rem; }
+
+.right-header {
+  background-color: yellow;
+  height: 7rem;
+  width: auto; }
+
+.Trending {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+.Trending1 {
+  background-color: #000;
+  height: 44vh; }
+
+.Trending2 {
+  background-color: #000;
+  height: 35vh; }
+
+.right-side {
+  height: 100vh;
+  display: flex;
+  flex-grow: 1;
   position: relative; }
-  @media screen and (max-width: 2000px) {
-    right {
-      max-width: 100rem; } }
-  @media screen and (max-width: 2000px) and (max-width: 1024px) {
-    right {
-      width: 25rem; } }
-  @media screen and (max-width: 2000px) and (max-width: 768px) {
-    right {
+  @media screen and (max-width: 768px) {
+    .right-side {
       display: none; } }
 
-.rigth-container {
+.rigth-items {
   display: flex;
+  position: fixed;
   flex-direction: column;
   gap: 1rem;
-  position: fixed; }
+  right: 0; }
   @media screen and (max-width: 900px) {
-    .rigth-container {
+    .rigth-items {
       display: none; } }
   @media screen and (max-width: 800px) {
-    .rigth-container {
+    .rigth-items {
       display: none; } }
   @media screen and (max-width: 768px) {
-    .rigth-container {
+    .rigth-items {
       display: none; } }
 
-/*.rigth-container2 {
-    height: 650vh;
-    width: auto;
-}*/
 .searching {
   display: flex;
   align-items: center;
   padding-top: 0.5rem;
   padding-left: 3rem;
-  background-color: #ffff;
-  padding-right: 5rem; }
-  @media screen and (max-width: 1200px) {
-    .searching {
-      padding-left: 2rem; } }
+  background-color: #ffff; }
 
 .search {
   padding: 1.5rem 13.5rem 1.5rem 5rem;
@@ -95,8 +113,6 @@ right {
 
 }*/
 .large {
-  height: 41vh;
-  width: 35.5rem;
   margin-top: 1rem;
   margin-left: 3rem;
   background-color: #f2f4f5;
@@ -109,13 +125,8 @@ right {
   @media screen and (max-width: 1200px) {
     .large {
       margin-left: 2rem; } }
-  @media screen and (max-width: 1100px) {
-    .large {
-      height: 47vh; } }
 
 .large2 {
-  height: 45vh;
-  width: 35.5rem;
   margin-left: 3rem;
   background-color: #f2f4f5;
   border-radius: 15px;
@@ -131,13 +142,12 @@ right {
       margin-left: 2rem; } }
   @media screen and (max-width: 1100px) {
     .large2 {
-      height: 37vh;
       padding-top: 5px;
       padding-bottom: 1rem; } }
 
 .small-details {
   width: auto;
-  height: 10rem;
+  height: 8rem;
   /*background-color: rgb(138, 137, 137);*/
   display: flex;
   flex-direction: row;
@@ -235,30 +245,34 @@ right {
     color: #66ccf5;
     text-decoration: underline; }
 
+.man {
+  display: flex;
+  flex-direction: row; }
+
 .middle {
+  background-color: orange;
+  flex-grow: 1;
   height: auto;
-  width: 60rem;
+  display: flex;
+  flex-basis: 150px;
+  flex-direction: column;
   border-right: 1px solid #e6e5e5;
   border-left: 1px solid #e6e5e5; }
-  @media screen and (max-width: 1200px) {
-    .middle {
-      width: 50rem; } }
-  @media screen and (max-width: 1024px) {
-    .middle {
-      width: 52rem; } }
-  @media screen and (max-width: 900px) {
-    .middle {
-      width: 70rem; } }
 
 .twit {
   display: flex;
   flex-direction: column; }
 
+.header {
+  position: relative; }
+
 .top1 {
   height: 5rem;
-  width: 59rem;
+  width: 38.9%;
   background-color: white;
   position: fixed;
+  top: 0;
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -525,11 +539,27 @@ right {
   align-items: center;
   transform: translateY(4px); }
 
+.left {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end; }
+
+.left-properties {
+  background-color: white;
+  height: 96vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
 .left-side {
   height: 100vh;
-  min-width: 43rem;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
   position: relative; }
   @media screen and (max-width: 1200px) {
     .left-side {
@@ -723,4 +753,14 @@ right {
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10rem;
+  padding-right: 10rem; }
+
+.container2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }

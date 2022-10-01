@@ -1,8 +1,45 @@
+.left {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+
+
+.left-properties {
+    background-color: white;
+    height: 96vh;
+    width: 70%;
+
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .left-side {
     height: 100vh;
-    min-width: 43rem;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
     position: relative;
 
     @media screen and (max-width: 1200px) {

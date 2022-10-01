@@ -1,22 +1,16 @@
 .middle {
+    background-color: orange;
+    flex-grow: 1;
+
     height: auto;
-    width: 60rem;
+    display: flex;
+    flex-basis: 150px;
+    flex-direction: column;
     border-right: 1px solid rgb(230, 229, 229);
     border-left: 1px solid rgb(230, 229, 229);
 
-    @media screen and (max-width: 1200px) {
-        width: 50rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 52rem;
-    }
-
-    @media screen and (max-width: 900px) {
-        width: 70rem;
-    }
-
 }
+
 
 .twit {
     display: flex;
@@ -24,11 +18,18 @@
 
 }
 
+.header {
+    position: relative;
+}
+
 .top1 {
     height: 5rem;
-    width: 59rem;
+    width: 38.9%;
     background-color: white;
     position: fixed;
+    top: 0;
+
+    bottom: 0;
 
     display: flex;
     flex-direction: row;
