@@ -1,84 +1,67 @@
 .right {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
+
+    position: relative;
+
+
 }
 
 .right-trend {
-    background-color: red;
     height: 95vh;
-    width: 70%;
+    width: 22.4%;
     margin-top: 2rem;
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
 }
 
 .right-header {
-    background-color: yellow;
-    height: 7rem;
-    width: auto;
+    height: 5rem;
+    min-width: 22vw;
+    position: fixed;
+    top: 1%;
 }
 
 .Trending {
     display: flex;
     flex-direction: column;
+    margin-left: 1.8rem;
     gap: 2rem;
+    position: fixed;
+    top: 10%
 }
 
 .Trending1 {
-    background-color: #000;
-    height: 44vh;
+    background-color: rgb(240, 236, 236);
+    height: 50vh;
+    min-width: 22vw;
+    border-radius: 15px;
 }
 
 .Trending2 {
-    background-color: #000;
-    height: 35vh;
-}
-
-
-
-
-.right-side {
-    height: 100vh;
-    display: flex;
-    flex-grow: 1;
-    position: relative;
-
-    @media screen and (max-width: 2000px) {}
-
-    @media screen and (max-width: 1024px) {}
-
-
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-}
-
-.rigth-items {
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    gap: 1rem;
-    right: 0;
-
-
-
-    @media screen and (max-width: 900px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 800px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-
+    background-color: rgb(245, 241, 241);
+    height: 32vh;
+    border-radius: 15px;
 
 }
+
+
+
+.large-h {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1rem;
+    color: #000;
+
+}
+
 
 
 
@@ -86,7 +69,6 @@
     display: flex;
     align-items: center;
     padding-top: 0.5rem;
-    padding-left: 3rem;
     background-color: #ffff;
 
 
@@ -96,110 +78,38 @@
 }
 
 .search {
-    padding: 1.5rem 13.5rem 1.5rem 5rem;
+    padding: 1.5rem 12.5rem 1.5rem 5rem;
     border: none;
     outline: none;
     background-color: rgb(242, 244, 247);
     border-radius: 70px;
+
+    @media screen and (max-width: 1500px) {
+        padding: 1.5rem 11rem 1.5rem 5rem;
+
+    }
 
 
 
 }
 
 .search-icon {
-    display: block;
-    position: absolute;
-    z-index: 99;
-    transform: translateX(20px);
+    transform: translate(4rem);
 }
 
-/*.comment {
-    text-align: center;
-    padding-left: 2.8rem;
-    padding-top: 2rem;
-    font-size: 16px;
-    font-weight: 400;
-    height: 10rem;
-    width: 100%;
-    border: none;
-    background-color: #ffff;
-    border-radius: 10px;
-    // margin-left: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    position: absolute;
-    display: none;
-
-
-}*/
-
-
-.large {
-
-    margin-top: 1rem;
-    margin-left: 3rem;
-    background-color: rgb(242, 244, 245);
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-
-    @media screen and (max-width: 1200px) {
-        margin-left: 2rem;
-    }
-
-    @media screen and (max-width: 1100px) {}
-
-
-
-
-}
-
-.large2 {
-    margin-left: 3rem;
-    background-color: rgb(242, 244, 245);
-    border-radius: 15px;
-    margin-top: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-
-    @media screen and (max-width: 1200px) {
-        margin-left: 2rem;
-    }
-
-    @media screen and (max-width: 1100px) {
-        padding-top: 5px;
-        padding-bottom: 1rem;
-    }
-
-
-
-}
 
 .small-details {
     width: auto;
     height: 8rem;
-    /*background-color: rgb(138, 137, 137);*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
 }
 
-.large-h {
-    font-size: 20px;
-    font-weight: 700;
-    padding-bottom: 1rem;
-    color: #000;
 
-}
 
 .small-h {
     font-size: 12px;
@@ -303,6 +213,7 @@
     color: #00acee;
     text-decoration: none;
     margin-bottom: 10px;
+    padding-left: 1.5rem;
 
 
     &:hover {
@@ -310,10 +221,4 @@
         text-decoration: underline;
 
     }
-}
-
-
-.man {
-    display: flex;
-    flex-direction: row;
 }

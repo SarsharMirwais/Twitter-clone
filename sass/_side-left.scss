@@ -19,6 +19,11 @@
     align-items: center;
     position: relative;
 
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
+
 }
 
 

@@ -1,13 +1,19 @@
 .middle {
-    background-color: orange;
-    flex-grow: 1;
+
 
     height: auto;
     display: flex;
+    flex-grow: 1;
     flex-basis: 150px;
     flex-direction: column;
     border-right: 1px solid rgb(230, 229, 229);
     border-left: 1px solid rgb(230, 229, 229);
+    position: relative;
+
+    @media screen and (max-width: 550px) {
+        height: 100%;
+        width: 100%;
+    }
 
 }
 
@@ -18,18 +24,9 @@
 
 }
 
-.header {
-    position: relative;
-}
-
 .top1 {
     height: 5rem;
-    width: 38.9%;
     background-color: white;
-    position: fixed;
-    top: 0;
-
-    bottom: 0;
 
     display: flex;
     flex-direction: row;
@@ -37,6 +34,35 @@
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    z-index: 9999999999999999;
+    position: fixed;
+    gap: 47rem;
+
+    @media screen and (max-width: 1500px) {
+        gap: 45rem;
+    }
+
+    @media screen and (max-width: 1450px) {
+        gap: 38rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        gap: 35rem;
+    }
+
+    @media screen and (max-width: 460px) {
+        gap: 30rem;
+    }
+}
+
+.header-home {
+    display: flex;
+    flex-grow: 2;
+}
+
+.header-svg {
+    display: flex;
+    flex-grow: 1;
 }
 
 .nav {
@@ -100,6 +126,7 @@
 
     @media screen and (max-width: 414px) {
         display: inherit;
+        z-index: 999999999;
 
     }
 }
